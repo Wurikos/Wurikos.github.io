@@ -383,7 +383,7 @@ template {
     background: #2f3234; }
 
 .inner {
-  background: url(/img/inner/inner-bg.png) no-repeat center center;
+  background: url(./img/inner/inner-bg.png) no-repeat center center;
   background-size: cover;
   height: 650px;
   color: white;
@@ -422,7 +422,7 @@ template {
   padding-bottom: 20px; }
 
 .best {
-  background: url(/img/best/best-bg.png) no-repeat center center;
+  background: url(./img/best/best-bg.png) no-repeat center center;
   background-size: cover;
   height: 100vh; }
 
