@@ -1,5 +1,5 @@
 .best {
-  background: url(./img/best/best-bg.png) no-repeat center center;
+  background: url(../img/best/best-bg.png) no-repeat center center;
   background-size: cover;
   height: 100vh; }
 
@@ -29,5 +29,5 @@
   font-family: 'gagalin';
   font-size: 72px;
   color: black;
-  padding-top: 140px;
+  padding-top: 80px;
   padding-bottom: 55px; }

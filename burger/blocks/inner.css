@@ -1,5 +1,5 @@
 .inner {
-  background: url(./img/inner/inner-bg.png) no-repeat center center;
+  background: url(../img/inner/inner-bg.png) no-repeat center center;
   background-size: cover;
   height: 650px;
   color: white;
