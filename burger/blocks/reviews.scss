@@ -1,0 +1,50 @@
+
+.reviews{
+    height: 100vh;
+}
+.reviews__list{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.reviews__elemm{
+    width: 25%;
+    height: 50%;
+    position: relative;
+    &:hover{
+        .reviews__hover{
+            opacity: 1;
+        }
+    }
+}
+
+.reviews__pic{
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+    
+    
+}
+
+.reviews__hover{
+    color:#fff;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(#444646, .5);
+    padding: 50px 19px 19px;
+    opacity: 0;
+    transition: opacity 0.3s;  
+}
+.hover__title {
+     font-family: 'gagalin' ;
+     padding-bottom: 32px;
+}
+.hover__text{
+    font-family: 'ubuntu-light' ;
+    padding-bottom: 20px;
+}

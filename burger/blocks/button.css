@@ -1,0 +1,8 @@
+.btn {
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-family: "ubuntu-medium";
+  text-transform: uppercase;
+  border-radius: 5px; }

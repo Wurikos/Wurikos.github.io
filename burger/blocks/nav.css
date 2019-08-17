@@ -1,0 +1,33 @@
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.nav__elemm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 20px; }
+  .nav__elemm::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    display: block;
+    margin-left: 20px; }
+  .nav__elemm:last-child::after {
+    display: none; }
+
+.nav__link {
+  font-family: 'ubuntu-medium';
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white; }
