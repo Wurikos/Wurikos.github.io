@@ -11,12 +11,15 @@
     margin-bottom: 3px;
     position: relative;
 
-    &--active {
+    &--active{
+        border-color: white;
+    }
+    &:hover{
         border-color: white;
     }
    
    
-    &::before{
+     &::before{
        content: "";
        width: 6px;
        height: 6px;
@@ -26,10 +29,15 @@
        top:50%;
        left: 50%;
        transform: translate(-50%,-50%);
+       
+      
+
 
    }
+
    
     &:last-child{
         margin-bottom: 0px;
     }
+    
 }

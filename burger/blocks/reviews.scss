@@ -14,8 +14,10 @@
     &:hover{
         .reviews__hover{
             opacity: 1;
+            transition: .1s;
         }
     }
+   
 }
 
 .reviews__pic{
@@ -38,7 +40,8 @@
     background: rgba(#444646, .5);
     padding: 50px 19px 19px;
     opacity: 0;
-    transition: opacity 0.3s;  
+      
+   
 }
 .hover__title {
      font-family: 'gagalin' ;
