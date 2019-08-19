@@ -317,8 +317,7 @@ html, body {
   height: 100%; }
 
 .wrapper {
-  min-height: 100%;
-  padding-bottom: 76px; }
+  min-height: 100%; }
 
 a {
   text-decoration: none; }
@@ -371,6 +370,11 @@ ul {
 
 a {
   display: block; }
+
+.section {
+  background: center center no-repeat;
+  background-size: cover;
+  height: 100vh; }
 
 @font-face {
   font-family: 'gagalin';
@@ -447,24 +451,29 @@ a {
   .btn:hover {
     background-color: #882d14; }
   .btn.btn--black {
-    background: #2f3234; }
+    background: #2f3234;
+    width: 110px; }
   .btn.btn--black:hover {
     background: #6f767a; }
 
 .inner {
-  background: url(../img/inner/inner-bg.png) no-repeat center center;
+  background: url(../img/inner/inner-bg.png) center center no-repeat;
   background-size: cover;
-  height: 650px;
-  color: white;
   height: 100vh; }
 
-.inner__main {
+.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .burger {
   height: 100%; }
+
+.main__logo {
+  width: 450px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto; }
 
 .main__content {
   display: -webkit-box;
@@ -484,7 +493,8 @@ a {
 
 .main__subtitle {
   font-family: 'lifehack';
-  font-size: 72px; }
+  font-size: 72px;
+  color: white; }
 
 .scrol__down {
   text-align: center;
@@ -500,9 +510,15 @@ a {
   display: -ms-flexbox;
   display: flex; }
 
+.best__content {
+  width: 100%; }
+
 .best__elemm {
   text-align: center;
-  width: 400px; }
+  width: 33%;
+  padding-right: 26px; }
+  .best__elemm:last-child {
+    padding: 0px; }
 
 .best__logo {
   padding-bottom: 30px; }
@@ -540,10 +556,7 @@ a {
   height: 50%;
   position: relative; }
   .reviews__elemm:hover .reviews__hover {
-    opacity: 1;
-    -webkit-transition: .1s;
-    -o-transition: .1s;
-    transition: .1s; }
+    opacity: 1; }
 
 .reviews__pic {
   display: block;
@@ -563,7 +576,10 @@ a {
   bottom: 0;
   background: rgba(68, 70, 70, 0.5);
   padding: 50px 19px 19px;
-  opacity: 0; }
+  opacity: 0;
+  -webkit-transition: .1s;
+  -o-transition: .1s;
+  transition: .1s; }
 
 .hover__title {
   font-family: 'gagalin';

@@ -1,17 +1,20 @@
 
 .inner {
-    background: url(../img/inner/inner-bg.png) no-repeat center center;
+    background: url(../img/inner/inner-bg.png)center center no-repeat;
     background-size: cover;
-    height: 650px;
-    color: white;
     height: 100vh;
 }
-.inner__main{
+.main{
     display: flex;
 }
 
 .burger{
     height: 100%;
+}
+
+.main__logo{
+    width: 450px;
+    flex: 0 0 auto;
 }
 
 .main__content{
@@ -30,4 +33,5 @@
 .main__subtitle{
     font-family: 'lifehack';
     font-size: 72px;
+    color: white;
 }

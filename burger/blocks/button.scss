@@ -9,15 +9,19 @@
     font-size: 13px;
     text-transform: uppercase;
     border-radius: 5px;
+   
 
     &:hover{
         background-color:#882d14;
     }
     &.btn--black{
         background: #2f3234;
+        width: 110px;
+        
     }
     
     &.btn--black:hover{
         background: #6f767a;
     }
 }   
+

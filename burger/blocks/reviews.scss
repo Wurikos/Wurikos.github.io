@@ -12,12 +12,10 @@
     height: 50%;
     position: relative;
     &:hover{
-        .reviews__hover{
-            opacity: 1;
-            transition: .1s;
+        .reviews__hover{  
+         opacity: 1;
         }
-    }
-   
+    }  
 }
 
 .reviews__pic{
@@ -40,6 +38,8 @@
     background: rgba(#444646, .5);
     padding: 50px 19px 19px;
     opacity: 0;
+    transition: .1s;
+    
       
    
 }

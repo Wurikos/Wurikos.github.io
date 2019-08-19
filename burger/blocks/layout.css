@@ -8,8 +8,7 @@ html, body {
   height: 100%; }
 
 .wrapper {
-  min-height: 100%;
-  padding-bottom: 76px; }
+  min-height: 100%; }
 
 a {
   text-decoration: none; }

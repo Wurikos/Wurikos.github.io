@@ -6,9 +6,17 @@
 .best__list{
     display: flex;
 }
+.best__content{
+    width: 100%;
+}
 .best__elemm{
     text-align: center;
-    width: 400px;
+    width: 33%;
+    padding-right: 26px;
+    
+    &:last-child{
+        padding: 0px;
+    }
 }
 .best__logo{
     padding-bottom: 30px;
