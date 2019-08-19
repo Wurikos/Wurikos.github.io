@@ -1,0 +1,13 @@
+.title {
+  font-family: 'gagalin', sans-serif;
+  font-size: 72px;
+  color: #f9b43b;
+  padding-bottom: 35px; }
+  .title.title--black {
+    color: black;
+    padding-top: 80px;
+    padding-bottom: 55px; }
+  .title--center {
+    text-align: center; }
+  .title--white {
+    color: white; }

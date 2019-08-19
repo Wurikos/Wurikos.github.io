@@ -1,7 +1,15 @@
+
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black:  #2f3234;
+$red:    #e35028;
+
 @import "./normalize.scss";
 @import"./layout.scss";
 @import"./section.scss";
 @import "./fonts.scss";
+@import"./title.scss";
 @import "./header.scss";
 @import "./nav.scss";
 @import "./button.scss";
@@ -9,13 +17,14 @@
 @import"./scrol-down.scss";
 @import "./best.scss";
 @import "./reviews.scss";
+@import "./team.scss";
+@import"./menu.scss";
+@import"./form.scss";
+@import "./radio.scss";
+@import "./checkbox.scss";
+@import"./contacts.scss";
 @import "./fixed-menu.scss";
 
 
 
 
-//colors
-$orange: #e45028;
-$yellow: #f9b43b;
-$black:  #2f3234;
-$red:    #e35028;

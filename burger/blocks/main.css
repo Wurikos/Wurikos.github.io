@@ -392,6 +392,21 @@ a {
   font-family: 'ubuntu-light';
   src: url(../fonts/ubuntu/Ubuntu-Light.woff); }
 
+.title {
+  font-family: 'gagalin', sans-serif;
+  font-size: 72px;
+  color: #f9b43b;
+  padding-bottom: 35px; }
+  .title.title--black {
+    color: black;
+    padding-top: 80px;
+    padding-bottom: 55px; }
+  .title--center {
+    text-align: center; }
+  .title--white {
+    color: white;
+    text-align: top; }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,12 +500,6 @@ a {
   padding-left: 20px;
   padding-top: 40px; }
 
-.main__title {
-  font-family: 'gagalin', sans-serif;
-  font-size: 72px;
-  color: #f9b43b;
-  padding-bottom: 35px; }
-
 .main__subtitle {
   font-family: 'lifehack';
   font-size: 72px;
@@ -532,13 +541,6 @@ a {
 .best__text {
   font-family: 'ubuntu-light';
   color: black; }
-
-.best__title {
-  font-family: 'gagalin';
-  font-size: 72px;
-  color: black;
-  padding-top: 80px;
-  padding-bottom: 55px; }
 
 .reviews {
   height: 100vh; }
@@ -588,6 +590,200 @@ a {
 .hover__text {
   font-family: 'ubuntu-light';
   padding-bottom: 20px; }
+
+.team {
+  background: url(../img/team/team-bg.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative; }
+
+.team__block {
+  position: absolute;
+  left: 50%;
+  background-color: #2f3234;
+  width: 50%;
+  height: 100%;
+  opacity: .9; }
+
+.team__content {
+  padding: 80px; }
+
+.team__title {
+  font-family: 'gagalin', sans-serif;
+  font-size: 72px;
+  color: #f9b43b;
+  padding-bottom: 35px; }
+
+.point__text {
+  color: white; }
+
+.point_pic {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; }
+
+.menu {
+  background: url(../img/menu/menu-bg.jpg) center center/cover no-repeat;
+  width: 100%;
+  height: 100vh; }
+
+.order {
+  background: url(../img/order/order-bg.jpg) center center/cover no-repeat; }
+
+.form__elemm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.form__column {
+  width: 50%;
+  margin-right: 20px; }
+  .form__column:last-child {
+    margin-right: 0; }
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.form__block {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  margin-right: 20px;
+  color: white; }
+  .form__block:last-child {
+    margin-right: 0px; }
+
+.form_block-title {
+  font-family: 'ubuntu-light';
+  padding-top: 25px; }
+
+.form__input {
+  background: white;
+  border-radius: 3px;
+  border: none;
+  padding: 8px 21px;
+  width: 100%;
+  outline: none; }
+  .form__input--textarea {
+    resize: none;
+    height: 110px; }
+
+.form__input:focus {
+  border: 2px solid #f89513; }
+
+.radio__input {
+  position: absolute;
+  opacity: 0; }
+
+.radio__input:checked + .radio__content .radio__btn:after {
+  opacity: 1; }
+
+.radio__input:checked + .radio__content .radio__text {
+  color: #e35028; }
+
+.radio__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.radio__group {
+  padding-top: 10px; }
+
+.radio__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 10px; }
+
+.radio__btn:after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #e35028;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.radio__text {
+  font-family: 'ubuntu-light';
+  color: #fff; }
+
+.checkbox {
+  margin-right: 10px; }
+
+.checkbox__input {
+  opacity: 0;
+  position: absolute; }
+
+.checkbox__input:checked + .checkbox__content .checkbox__btn img {
+  opacity: 1; }
+
+.checkbox__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.checkbox__btn {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  margin-right: 5px; }
+
+.checkbox__btn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 9px;
+  opacity: 0; }
+
+.checkbox__text {
+  font-family: 'ubuntu-light';
+  color: #fff; }
+
+.contacts {
+  background: url(../img/contacts/map.jpg) center center/cover no-repeat;
+  position: relative; }
+
+.info__con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+footer {
+  background: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px; }
+
+.numb {
+  font-family: 'ubuntu-medium';
+  color: #e35028; }
 
 .fixed-menu {
   position: fixed;

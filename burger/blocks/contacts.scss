@@ -1,0 +1,21 @@
+.contacts{
+    background: url(../img/contacts/map.jpg) center center / cover no-repeat;
+    position: relative;
+}
+.info__con{
+    display: flex;
+}
+footer{
+    background: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    
+}
+
+.numb{
+    font-family: 'ubuntu-medium' ;
+    color: #e35028;
+}

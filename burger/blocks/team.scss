@@ -1,0 +1,31 @@
+.team{
+    background: url(../img/team/team-bg.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.team__block{
+    position: absolute;
+    left: 50%;
+    background-color: #2f3234;
+    width: 50%;
+    height: 100%;
+    opacity: .9;
+}
+.team__content{
+    padding: 80px;
+}
+.team__title {
+    font-family: 'gagalin', sans-serif;
+    font-size: 72px;
+    color: #f9b43b;
+    padding-bottom: 35px;
+}
+.point__text{
+    color: white;
+}
+.point_pic{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
