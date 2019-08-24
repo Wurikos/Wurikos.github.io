@@ -10,8 +10,12 @@
     display: flex;
     }
   
+    .radio{
+      padding-right: rem(20px);
+    }
     .radio__group{
-        padding-top:10px;
+        padding-top:rem(10px);
+        display: flex;
     }
   .radio__btn {
     display: flex;

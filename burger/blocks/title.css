@@ -10,4 +10,5 @@
   .title--center {
     text-align: center; }
   .title--white {
-    color: white; }
+    color: white;
+    padding: 110px 80px; }

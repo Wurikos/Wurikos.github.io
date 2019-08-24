@@ -1,10 +1,6 @@
 
-//colors
-$orange: #e45028;
-$yellow: #f9b43b;
-$black:  #2f3234;
-$red:    #e35028;
 
+@import"./media.scss";
 @import "./normalize.scss";
 @import"./layout.scss";
 @import"./section.scss";
@@ -24,6 +20,13 @@ $red:    #e35028;
 @import "./checkbox.scss";
 @import"./contacts.scss";
 @import "./fixed-menu.scss";
+@import"./sprite.scss";
+
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black:  #2f3234;
+$red:    #e35028;
 
 
 
