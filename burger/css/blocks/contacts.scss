@@ -1,0 +1,45 @@
+.contacts{
+    background: url(../img/contacts/map.jpg) center center / cover no-repeat;
+    position: relative;
+}
+
+.phone{
+    fill: red;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+footer{
+    background: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    
+}
+.adress-text{
+    font-family: 'ubuntu-medium' ;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.info-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-icon{
+    height: 20px;
+    width: 20px;
+    fill:gray;
+    margin-right: 20px;
+    &:last-child{
+        margin: 0;
+    }
+}
+.numb{
+    display: flex;
+    align-items: center;
+    font-family: 'ubuntu-medium' ;
+    color: #e35028;
+}

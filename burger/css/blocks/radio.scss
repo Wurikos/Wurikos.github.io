@@ -1,0 +1,45 @@
+.radio__input {
+    position: absolute;
+    opacity: 0; }
+    .radio__input:checked + .radio__content .radio__btn:after {
+      opacity: 1; }
+    .radio__input:checked + .radio__content .radio__text {
+      color: #e35028; }
+  
+  .radio__content {
+    display: flex;
+    }
+  
+    .radio{
+      padding-right: rem(20px);
+    }
+    .radio__group{
+        padding-top:rem(10px);
+        display: flex;
+    }
+  .radio__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 10px; 
+}
+
+.radio__btn:after {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: #e35028;
+      border-radius: 50%;
+      opacity: 0;
+      transition: 0.3s; 
+}
+  
+  .radio__text {
+    font-family: 'ubuntu-light' ;
+    color: #fff; 
+}

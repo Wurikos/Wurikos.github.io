@@ -1,0 +1,43 @@
+.fixed-menu{
+    position: fixed;
+    top: 95px;
+    right: 53px;
+}
+.fixed-menu__item{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    margin-bottom: 3px;
+    position: relative;
+
+    &--active{
+        border-color: white;
+    }
+    &:hover{
+        border-color: white;
+    }
+   
+   
+     &::before{
+       content: "";
+       width: 6px;
+       height: 6px;
+       background: #fff;
+       border-radius: 50%;
+       position: absolute;
+       top:50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       
+      
+
+
+   }
+
+   
+    &:last-child{
+        margin-bottom: 0px;
+    }
+    
+}

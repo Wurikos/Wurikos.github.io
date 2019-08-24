@@ -1,0 +1,33 @@
+.best{
+    background: url(../img/best/best-bg.png)no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+.best__list{
+    display: flex;
+}
+.best__content{
+    width: 100%;
+}
+.best__elemm{
+    text-align: center;
+    width: 33%;
+    padding-right: 26px;
+    
+    &:last-child{
+        padding: 0px;
+    }
+}
+.best__logo{
+    padding-bottom: 30px;
+}
+.best__subtitle{
+    font-family: 'lifehack' ;
+    font-size: 40px;
+    color: black;
+    padding-bottom: 30px;
+}
+.best__text{
+    font-family: 'ubuntu-light';
+    color: black;
+}

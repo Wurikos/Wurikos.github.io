@@ -1,0 +1,27 @@
+.sprite {
+    background-image: url(../img/best/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+    text-align: center;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    
+}
+
+.sprite-hand {
+    width: 73px;
+    height: 85px;
+    background-position: -10px -10px;
+}
+
+.sprite-meat {
+    width: 97px;
+    height: 89px;
+    background-position: -103px -10px;
+}
+
+.sprite-natural {
+    width: 88px;
+    height: 75px;
+    background-position: -220px -10px;
+}

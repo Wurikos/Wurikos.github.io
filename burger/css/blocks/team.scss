@@ -1,0 +1,97 @@
+.team{
+    background: url(../img/team/team-bg.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.team__block{
+    position: absolute;
+    left: 50%;
+    background-color: #2f3234;
+    width: 50%;
+    height: 100%;
+    opacity: .9;
+    padding: 0 rem(40px);
+}
+.team__point{
+    padding: rem(10px);
+}
+.team__content{
+    padding: rem(80px);
+}
+.team__title {
+    font-family: 'gagalin', sans-serif;
+    font-size: rem(72px);
+    color: #f9b43b;
+    padding-bottom: rem(35px);
+}
+.point__text{
+    color: white;
+}
+.point_pic{
+    width: rem(20px);
+    height: rem(20px);
+    border-radius: 50%;
+}
+.team__poin-title{
+    display: flex;
+    align-items: center;
+    font-family: 'gagalin', sans-serif;
+    font-size: rem(14px);
+    color: white;
+    padding-bottom: rem(20px);
+
+    .point__link{
+        color: inherit;
+    }
+    &::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid #f9b43b;
+        display: block;
+        margin-right: rem(15px);
+    }
+}
+.team__poin-content{
+    display: flex;
+    padding-left: rem(20px);
+}
+.point__logo{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: rem(150px);
+    height: rem(100px);
+    border-radius: 50%;
+    margin-right: rem(20px);
+}
+
+.point__text-title{
+    font-family: 'ubuntu-bold' ;
+    padding-bottom: rem(10px);
+}
+
+.point__text{
+    font-family: 'ubuntu-light' ;
+    line-height: 1.4em;
+}
+
+.team__poin-content{
+    height: 0;
+    overflow: hidden;
+
+}
+
+ .point--active{
+
+     .team__poin-content{
+         height: 100%;
+     }
+     
+     .team__poin-title{
+        color: #f9b43b;
+     }
+ }
