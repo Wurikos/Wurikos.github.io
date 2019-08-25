@@ -4,11 +4,11 @@
     color: white;
     border: none;
     cursor: pointer;
-    padding: 10px 15px; 
+    padding: rem(10px) rem(15px); 
     font-family: "ubuntu-medium";
-    font-size: 13px;
+    font-size: rem(13px);
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: rem(5px);
    
 
     &:hover{
@@ -16,12 +16,18 @@
     }
     &.btn--black{
         background: #2f3234;
-        width: 110px;
+        width: rem(110px);
         
     }
     
     &.btn--black:hover{
         background: #6f767a;
     }
+
+
 }   
+
+.btn__group .btn{
+    margin-right: rem(20px);
+}
 

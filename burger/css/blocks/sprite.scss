@@ -3,9 +3,14 @@
     background-repeat: no-repeat;
     display: block;
     text-align: center;
-    margin-left: 100px;
-    margin-bottom: 40px;
-    
+    margin-left: rem(100px);
+    margin-bottom: rem(40px);
+
+    @include tablets{
+        
+        margin-left: rem(70px);
+        
+    }
 }
 
 .sprite-hand {

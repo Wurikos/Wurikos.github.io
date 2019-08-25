@@ -20,13 +20,17 @@
     display: flex;
     &.active{
         .accorderdeon-menu__content{
-            max-width: 500px;
+            max-width: rem(500px);
+            @include tablets{
+                width: 0;
+                
+            }
         }
     }
 }
 .accorderdeon-menu__btn{
     position: relative;
-    width: 80px;
+    width: rem(80px);
     flex: 0 0 auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,12 +41,17 @@
     top: 100%;
     left: 50%;
     color: white;
-    font-size: 40px;
+    font-size: rem(40px);
     font-family: 'gagalin' ;
     transform: rotate(-90deg) translateY(-50%);
     transform-origin: 0 0;
-    margin-top: -40px;
+    margin-top: rem(-40px);
     white-space: nowrap;
+
+    &:hover{
+        color: $yellow;
+        transition: 0.3s;
+    }
 
     
 }
@@ -55,7 +64,7 @@
 
 .accorderdeon-menu__text{
     font-family: 'ubuntu-light' ;
-    font-size: 20px;
-    padding: 60px 30px;
+    font-size: rem(14px);
+    padding: rem(60px) rem(30px);
 
 }

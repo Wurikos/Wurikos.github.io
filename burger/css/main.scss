@@ -3,31 +3,31 @@
 @import "_misc/layout.scss";
 @import "_misc/fonts.scss";
 
-
-
-@import "blocks/section.scss";
-@import "blocks/title.scss";
-@import "blocks/header.scss";
-@import "blocks/nav.scss";
-@import "blocks/button.scss";
-@import "blocks/inner.scss";
-@import "blocks/scrol-down.scss";
-@import "blocks/best.scss";
-@import "blocks/reviews.scss";
-@import "blocks/team.scss";
-@import "blocks/menu.scss";
-@import "blocks/form.scss";
-@import "blocks/radio.scss";
-@import "blocks/checkbox.scss";
-@import "blocks/contacts.scss";
-@import "blocks/fixed-menu.scss";
-@import "blocks/sprite.scss";
-
-//colors
 $orange: #e45028;
 $yellow: #f9b43b;
 $black:  #2f3234;
 $red:    #e35028;
+
+
+@import "./blocks/section.scss";
+@import "./blocks/title.scss";
+@import "./blocks/header.scss";
+@import "./blocks/hamburger-menu.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/button.scss";
+@import "./blocks/inner.scss";
+@import "./blocks/scrol-down.scss";
+@import "./blocks/best.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/team.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/form.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/fixed-menu.scss";
+@import "./blocks/sprite.scss";
+
 
 
 

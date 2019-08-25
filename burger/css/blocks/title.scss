@@ -1,19 +1,26 @@
 .title{
     font-family: 'gagalin', sans-serif;
-    font-size: 72px;
-    color: #f9b43b;
-    padding-bottom: 35px;
+    font-size: rem(72px);
+    color:$yellow;
+    padding-bottom: rem(35px);
+   
+   
+    @include tablets{
+        font-size: rem(65px);
+        padding-bottom: rem(15px);
+        
+    }
 
     &.title--black{
      color: black;
-    padding-top:80px;
-    padding-bottom: 55px;
+    padding-top:rem(80px);
+    padding-bottom: rem(55px);
     }
     &--center{
         text-align: center;
     }
     &--white{
         color: white;
-        padding: 110px 80px;
+        padding: rem(110px) rem(80px);
     }
 }

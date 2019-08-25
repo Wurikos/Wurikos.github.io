@@ -4,10 +4,21 @@ height: 100%;
 align-items: center;
 }
 
+
+nav{
+    @include tablets{
+       display: none;
+        
+    }
+
+    @include phones {
+        display: none;
+    }
+}
 .nav__elemm{ 
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-right: rem(10px);
     &::after{
         content: "";
         width: 4px;
@@ -30,7 +41,7 @@ align-items: center;
 
 .nav__link{
     font-family: 'ubuntu-medium';
-    font-size: 13px;
+    font-size: rem(13px);
     text-transform: uppercase;
     color: white;
 

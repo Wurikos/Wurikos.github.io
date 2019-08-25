@@ -14,8 +14,16 @@
     &:hover{
         .reviews__hover{  
          opacity: 1;
+         @include tablets{
+            padding-top: 10%
+        }
         }
     }  
+
+    @include tablets{
+       width: 50%;
+       height: 25%;
+    }
 }
 
 .reviews__pic{
@@ -36,7 +44,7 @@
     right: 0;
     bottom: 0;
     background: rgba(#444646, .5);
-    padding: 50px 19px 19px;
+    padding: rem(50px) rem(19px) rem(19px);
     opacity: 0;
     transition: .1s;
     
@@ -45,9 +53,13 @@
 }
 .hover__title {
      font-family: 'gagalin' ;
-     padding-bottom: 32px;
+     padding-bottom: rem(32px);
+     @include tablets{
+        padding-bottom: rem(10px);
+        
+    }
 }
 .hover__text{
     font-family: 'ubuntu-light' ;
-    padding-bottom: 20px;
+    padding-bottom:rem(20px);
 }

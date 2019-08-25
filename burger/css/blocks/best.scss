@@ -5,6 +5,9 @@
 }
 .best__list{
     display: flex;
+    @include phones{
+        flex-direction: column;
+    }
 }
 .best__content{
     width: 100%;
@@ -12,20 +15,29 @@
 .best__elemm{
     text-align: center;
     width: 33%;
-    padding-right: 26px;
+    padding-right: rem(26px);
     
+    @include phones{
+        flex-direction: row;
+        
+    }
+
     &:last-child{
         padding: 0px;
     }
 }
 .best__logo{
-    padding-bottom: 30px;
+    padding-bottom: rem(30px);
 }
 .best__subtitle{
     font-family: 'lifehack' ;
-    font-size: 40px;
+    font-size: rem(40px);
     color: black;
-    padding-bottom: 30px;
+    padding-bottom: rem(30px);
+    @include tablets{
+        padding-bottom: rem(10px);
+        
+    }
 }
 .best__text{
     font-family: 'ubuntu-light';

@@ -21,18 +21,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     border-radius: 50%;
     background-color: #fff;
-    margin-right: 10px; 
+    margin-right: rem(10px); 
 }
 
 .radio__btn:after {
       content: '';
       display: block;
-      width: 8px;
-      height: 8px;
+      width: rem(8px);
+      height: rem(8px);
       background-color: #e35028;
       border-radius: 50%;
       opacity: 0;
