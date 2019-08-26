@@ -387,23 +387,23 @@ a {
 
 @font-face {
   font-family: 'gagalin';
-  src: url(/fonts/Gagalin-Regular.woff); }
+  src: url(../fonts/Gagalin-Regular.woff); }
 
 @font-face {
   font-family: 'lifehack';
-  src: url(/fonts/Lifehack-Medium.woff); }
+  src: url(../fonts/Lifehack-Medium.woff); }
 
 @font-face {
   font-family: 'ubuntu-medium';
-  src: url(/fonts/ubuntu/Ubuntu-Medium.woff); }
+  src: url(../fonts/ubuntu/Ubuntu-Medium.woff); }
 
 @font-face {
   font-family: 'ubuntu-light';
-  src: url(/fonts/ubuntu/Ubuntu-Light.woff); }
+  src: url(../fonts/ubuntu/Ubuntu-Light.woff); }
 
 @font-face {
   font-family: 'ubuntu-bold';
-  src: url(/fonts/ubuntu/Ubuntu-Bold.woff2); }
+  src: url(../fonts/ubuntu/Ubuntu-Bold.woff2); }
 
 .section {
   background: center center no-repeat;
