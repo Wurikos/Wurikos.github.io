@@ -52,4 +52,7 @@
         font-size: rem(65px);
         
     }
+    @include phones{
+        font-size: rem(50px);
+    }
 }

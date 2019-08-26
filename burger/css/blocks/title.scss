@@ -10,6 +10,9 @@
         padding-bottom: rem(15px);
         
     }
+    @include phones{
+        font-size: rem(50px);
+    }
 
     &.title--black{
      color: black;

@@ -3,9 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding-top:rem(10px);
-    @include tablets{
-        justify-content: space-around;
-    }
+   
 
 }
 .header__butt{

@@ -419,6 +419,9 @@ a {
     .title {
       font-size: 4.0625rem;
       padding-bottom: 0.9375rem; } }
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 3.125rem; } }
   .title.title--black {
     color: black;
     padding-top: 5rem;
@@ -447,10 +450,6 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 0.625rem; }
-  @media screen and (max-width: 768px) {
-    .header {
-      -ms-flex-pack: distribute;
-      justify-content: space-around; } }
 
 @media screen and (max-width: 768px) {
   .header__butt {
@@ -624,6 +623,9 @@ a {
   @media screen and (max-width: 768px) {
     .main__subtitle {
       font-size: 4.0625rem; } }
+  @media screen and (max-width: 480px) {
+    .main__subtitle {
+      font-size: 3.125rem; } }
 
 .scrol__down {
   text-align: center;
@@ -679,10 +681,20 @@ a {
   .best__elemm:last-child {
     padding: 0px; }
 
+.best__icon-hand {
+  width: 30%; }
+
+.best__icon-meat {
+  width: 30%; }
+
+.best__icon-natural {
+  width: 30%; }
+
 @media screen and (max-width: 480px) {
   .best__desc {
     text-align: left;
-    padding: 1.25rem; } }
+    padding: 1.25rem;
+    width: 100%; } }
 
 .best__subtitle {
   font-family: 'lifehack';
@@ -692,10 +704,16 @@ a {
   @media screen and (max-width: 768px) {
     .best__subtitle {
       padding-bottom: 0.625rem; } }
+  @media screen and (max-width: 480px) {
+    .best__subtitle {
+      font-size: 1.5rem; } }
 
 .best__text {
   font-family: 'ubuntu-light';
   color: black; }
+  @media screen and (max-width: 480px) {
+    .best__text {
+      font-size: 0.875rem; } }
 
 .reviews {
   height: 100vh; }

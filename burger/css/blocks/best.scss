@@ -36,10 +36,19 @@
         padding: 0px;
     }
 }
+
+.best__icon{
+    &-hand{
+        width: 30%;
+    }
+    &-meat{ width: 30%;}
+    &-natural{ width: 30%;}
+}
 .best__desc{
     @include phones{
         text-align: left;
         padding: rem(20px);
+        width: 100%;
     }
 }
 .best__subtitle{
@@ -51,8 +60,14 @@
         padding-bottom: rem(10px);
         
     }
+    @include phones{
+        font-size: rem(24px);
+    }
 }
 .best__text{
     font-family: 'ubuntu-light';
     color: black;
+    @include phones{
+        font-size: rem(14px);
+    }
 }
