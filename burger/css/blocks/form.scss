@@ -33,8 +33,11 @@
     color: white;
      &:last-child{
         margin-right: 0px;
-
      }
+     @include tablets{
+        width: 100%;
+
+    }
 }
 
 .form_block-title{
