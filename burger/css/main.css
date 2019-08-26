@@ -564,7 +564,7 @@ a {
 @media screen and (max-width: 480px) {
   .btn__group {
     text-align: center;
-    padding-top: 1.25rem; } }
+    padding-top: 0.625rem; } }
 
 .btn__group .btn {
   margin-right: 1.25rem; }
@@ -1118,6 +1118,9 @@ span.phone {
 .form_block-title {
   font-family: 'ubuntu-light';
   padding-top: 1.5625rem; }
+  @media screen and (max-width: 480px) {
+    .form_block-title {
+      padding-top: 0.625rem; } }
 
 .form__input {
   background: white;
