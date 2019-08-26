@@ -17,6 +17,10 @@
     &.btn--black{
         background: #2f3234;
         width: rem(110px);
+        @include phones{
+            width: 150px;
+        }
+
         
     }
     
@@ -27,7 +31,16 @@
 
 }   
 
+.btn__group{
+    @include phones{
+        text-align: center;
+        padding-top: rem(20px);
+
+    }
+}
+
 .btn__group .btn{
     margin-right: rem(20px);
+    
 }
 

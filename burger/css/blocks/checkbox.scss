@@ -10,7 +10,15 @@
   
   .checkbox__content {
     display: flex;
-    align-items: center; }
+    align-items: center; 
+    
+    @include phones{
+      justify-content: center;
+      padding-top: 10px;
+
+  }
+    
+  }
   
   .checkbox__btn {
     position: relative;

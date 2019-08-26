@@ -15,6 +15,10 @@
      color: black;
     padding-top:rem(80px);
     padding-bottom: rem(55px);
+     @include phones{
+        padding-top:rem(20px);
+        padding-bottom: rem(20px);
+     }
     }
     &--center{
         text-align: center;
@@ -22,5 +26,8 @@
     &--white{
         color: white;
         padding: rem(110px) rem(80px);
+        @include phones{
+            padding: rem(110px) rem(50px);
+        }
     }
 }

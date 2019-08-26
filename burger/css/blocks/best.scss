@@ -7,8 +7,11 @@
     display: flex;
     @include phones{
         flex-direction: column;
+        
+      
     }
 }
+
 .best__content{
     width: 100%;
 }
@@ -22,6 +25,10 @@
     
     @include phones{
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-right: rem(0px);
         
     }
 
@@ -29,10 +36,11 @@
         padding: 0px;
     }
 }
-
-.best__icon{
-    height: rem(50px);
-    width: rem(50px);
+.best__desc{
+    @include phones{
+        text-align: left;
+        padding: rem(20px);
+    }
 }
 .best__subtitle{
     font-family: 'lifehack' ;

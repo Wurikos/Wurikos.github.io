@@ -3,6 +3,9 @@
     position: relative;
 }
 
+.contacts__content{
+    height: 100%;
+}
 .phone{
     fill: red;
     height: rem(15px);
@@ -16,6 +19,9 @@ footer{
     bottom: 0;
     width: 100%;
     height: rem(70px);
+    @include phones{
+        height: rem(100px);
+    }
     
 }
 .adress-text{
@@ -24,9 +30,22 @@ footer{
     padding-bottom: rem(10px);
 }
 .info-wrap{
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include phones{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+.social{
+    @include phones{
+        padding-top: rem(15px);
+    }
 }
 .social-icon{
     height: rem(20px);
@@ -49,4 +68,8 @@ footer{
     align-items: center;
     font-family: 'ubuntu-medium' ;
     color: #e35028;
+    @include phones{
+        justify-content: center;
+
+    }
 }

@@ -52,7 +52,16 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
         
+    }
+    @include phones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+         
     }
     
       
@@ -65,9 +74,31 @@
         padding-bottom: rem(10px);
         
     }
+    @include phones{
+        font-size: rem(24px);
+
+    }
 }
 .hover__text{
     font-family: 'ubuntu-light' ;
     padding-bottom:rem(20px);
+
+    @include phones{
+        display: none;
+
+    }
    
+}
+
+span.phone{
+    display: none;
+    @include phones{
+        display: contents;
+        
+    }
+}
+span.normal{
+    @include phones{
+        display: none;
+    }
 }

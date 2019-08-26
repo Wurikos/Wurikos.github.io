@@ -16,6 +16,11 @@
     .radio__group{
         padding-top:rem(10px);
         display: flex;
+        @include phones{
+          justify-content: center;
+          padding-top:rem(20px);
+  
+      }
     }
   .radio__btn {
     display: flex;

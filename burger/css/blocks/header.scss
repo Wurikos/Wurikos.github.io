@@ -8,3 +8,13 @@
     }
 
 }
+.header__butt{
+    @include tablets{
+        display: flex;
+        align-items: center;
+    }
+    @include phones{
+        display: flex;
+        align-items: center;
+    }
+}
