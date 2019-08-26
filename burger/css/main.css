@@ -558,9 +558,6 @@ a {
   .btn.btn--black {
     background: #2f3234;
     width: 6.875rem; }
-    @media screen and (max-width: 480px) {
-      .btn.btn--black {
-        width: 150px; } }
   .btn.btn--black:hover {
     background: #6f767a; }
 

@@ -16,12 +16,7 @@
     }
     &.btn--black{
         background: #2f3234;
-        width: rem(110px);
-        @include phones{
-            width: 150px;
-        }
-
-        
+        width: rem(110px);  
     }
     
     &.btn--black:hover{
