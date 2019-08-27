@@ -39,11 +39,12 @@
 
 .best__icon{
     &-hand{
-        width: 30%;
+        height: 100px;
     }
-    &-meat{ width: 30%;}
-    &-natural{ width: 30%;}
+    &-meat{ height: 100px; ;}
+    &-natural{ height: 100px;}
 }
+
 .best__desc{
     @include phones{
         text-align: left;
@@ -55,6 +56,7 @@
     font-family: 'lifehack' ;
     font-size: rem(40px);
     color: black;
+    padding-top: 20px;
     padding-bottom: rem(30px);
     @include tablets{
         padding-bottom: rem(10px);

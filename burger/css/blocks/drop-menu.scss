@@ -1,0 +1,65 @@
+
+.drop__menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f08c33;
+    width: rem(90px);
+    height: rem(90px);
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+}
+.drop__icon{
+    height: rem(50px);
+    width: rem(50px);
+}
+.drop__btn{
+    position: relative;
+}
+.drop__text{
+    font-family: 'gagalin' ;
+    font-size: rem(14px);
+    color: #fff;
+}
+
+.drop__menu-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        color: #000;
+        opacity: 0.902;
+        top:0%;
+        left: 100%;
+        position: absolute;
+        margin-left: 20px;
+        margin-top: rem(-10px);
+        width: rem(280px);
+        height: rem(330px);   
+      }
+
+.drop__menu-elemm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  rem(2px) rem(20px);
+
+}
+.elemm__picture{
+    margin-right: rem(20px);
+    height: rem(40px);
+    width: rem(40px);
+}
+
+.menu__elemm-title{
+    font-family: 'ubuntu-medium' ;
+    font-size: rem(14px);
+}
+.menu__elem-weight{
+    font-family: 'ubuntu-light' ;
+    font-size: rem(14px);
+    text-align: center;
+}
