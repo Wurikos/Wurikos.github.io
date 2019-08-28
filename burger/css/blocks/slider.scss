@@ -5,29 +5,38 @@
     background-image: -ms-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
     height: 100vh;
     color: #fff;
+    
   }
   
    .slider__list{
        display: flex;
        justify-content: center;
        flex: 0 0 auto;
+       height: rem(465px);
+
+       
+       
    }
   .slider__elemm{
       display: flex;
-      align-items: center;
-      justify-content: center;
   }
   .slider__burger{
-      height: 90%;
+      width: 100%;
   }
 
-
+  .slider__col{
+      flex: 1;
+      &--center{
+          display: flex;
+          align-items: center;
+      }
+  }
   .slider__title{
       color: #fff;
   }
 
   .main__elemm{
-      min-width: rem(960px);
+      min-width: 100%;
       position: relative;
       
   }
@@ -35,7 +44,7 @@
   .slider__price{
       display: flex;
       justify-content:space-between;
-      align-items: center;
+      align-items: flex-end;
   }
   .slider__text{
     padding-bottom: 40px;
@@ -50,24 +59,31 @@
       font-size: rem(72px);
     font-family: 'gagalin' ;
     color: $orange;
+    line-height: 0.8;
   }
   .litle{
       font-size: 50px;
+  }
+  
+  .slider__wrapper{
+      position: relative;
   }
 
   .slider__scroll{
       height: 100%;
       width: rem(40px);
       transform: rotate(90deg);
+      top: 50%;
+      display: block;
       &.right{
-        transform: rotate(270deg);
+        transform: rotate(270deg);   
       }
   }
 
   .slider__pic{
       position: absolute;
-      top:100%;
       left: 0;
+      bottom: 0;
      
   }
   .slider__picture{
@@ -87,7 +103,7 @@
   .pic__text{
     font-family: 'gagalin' ;
     font-size: rem(14px);
-      top:90%;
+      top:88%;
       left: 31%;
       position: absolute;
   }
