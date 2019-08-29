@@ -14,12 +14,17 @@
        flex: 0 0 auto;
        height: rem(465px);
        position: relative;
-
        
+    
        
    }
   .slider__elemm{
       display: flex;
+      @include tablets{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
   }
   .slider__burger{
       width: 100%;
@@ -32,6 +37,7 @@
       display: flex;
       position: absolute;
       top: 0;
+      left: rem(-50px);
       bottom: 0;
       width: rem(50px);
       justify-content: center;
@@ -44,7 +50,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 0;
+    right: rem(-50px);
     width: rem(50px);
   }
 
@@ -55,9 +61,17 @@
           display: flex;
           align-items: center;
       }
+
+      @include tablets{
+          text-align: center;
+          
+      }
   }
   .slider__title{
       color: #fff;
+      @include tablets{
+        padding: 0 rem(200px);
+    }
   }
 
   .main__elemm{
@@ -70,15 +84,26 @@
       display: flex;
       justify-content:space-between;
       align-items: flex-end;
+
+      @include tablets{
+          justify-content: center;
+      }
   }
   .slider__text{
     padding-bottom: 40px;
     font-family: 'ubuntu-light' ;
     font-size: 14px;
+    
+    @include tablets{
+        padding-top: rem(20px);
+    }
   }
   .slider__btn{
       display: block;
       width: rem(100px);
+        @include tablets{
+            margin-left: rem(20px);
+        }
   }
   .price{
       font-size: rem(72px);
@@ -109,6 +134,11 @@
       position: absolute;
       left: 0;
       bottom: 0;
+
+     @include tablets {
+         top:0;
+      }
+
      
   }
   .slider__picture{
@@ -123,6 +153,9 @@
     top: 50%;
       left: 31%;
       position: absolute;
+      @include tablets{
+          top: 11%;
+      }
   }
 
   .pic__text{
@@ -131,4 +164,7 @@
       top:88%;
       left: 31%;
       position: absolute;
+      @include tablets{
+        top: 20%;
+    }
   }

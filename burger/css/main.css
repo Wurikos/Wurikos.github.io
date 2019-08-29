@@ -737,6 +737,18 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .slider__elemm {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .slider__burger {
   width: 100%; }
@@ -750,6 +762,7 @@ a {
   display: flex;
   position: absolute;
   top: 0;
+  left: -3.125rem;
   bottom: 0;
   width: 3.125rem;
   -webkit-box-pack: center;
@@ -772,7 +785,7 @@ a {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
+  right: -3.125rem;
   width: 3.125rem; }
 
 .slider__col {
@@ -786,9 +799,15 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+  @media screen and (max-width: 768px) {
+    .slider__col {
+      text-align: center; } }
 
 .slider__title {
   color: #fff; }
+  @media screen and (max-width: 768px) {
+    .slider__title {
+      padding: 0 12.5rem; } }
 
 .main__elemm {
   min-width: 100%;
@@ -804,15 +823,26 @@ a {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end; }
+  @media screen and (max-width: 768px) {
+    .slider__price {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .slider__text {
   padding-bottom: 40px;
   font-family: 'ubuntu-light';
   font-size: 14px; }
+  @media screen and (max-width: 768px) {
+    .slider__text {
+      padding-top: 1.25rem; } }
 
 .slider__btn {
   display: block;
   width: 6.25rem; }
+  @media screen and (max-width: 768px) {
+    .slider__btn {
+      margin-left: 1.25rem; } }
 
 .price {
   font-size: 4.5rem;
@@ -843,6 +873,9 @@ a {
   position: absolute;
   left: 0;
   bottom: 0; }
+  @media screen and (max-width: 768px) {
+    .slider__pic {
+      top: 0; } }
 
 .slider__picture {
   height: 6.5625rem;
@@ -855,6 +888,9 @@ a {
   top: 50%;
   left: 31%;
   position: absolute; }
+  @media screen and (max-width: 768px) {
+    .pic__numb {
+      top: 11%; } }
 
 .pic__text {
   font-family: 'gagalin';
@@ -862,10 +898,16 @@ a {
   top: 88%;
   left: 31%;
   position: absolute; }
+  @media screen and (max-width: 768px) {
+    .pic__text {
+      top: 20%; } }
 
 .drop__menu {
   position: absolute;
   top: 0; }
+  @media screen and (max-width: 768px) {
+    .drop__menu {
+      top: -7.5rem; } }
 
 .drop__menu:hover .drop__menu-list {
   top: 0;

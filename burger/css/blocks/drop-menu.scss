@@ -2,6 +2,9 @@
 .drop__menu{
     position: absolute;
     top: 0;
+    @include tablets{
+        top:  rem(-120px);
+    }
 }
 
 .drop__menu:hover .drop__menu-list{
@@ -24,6 +27,9 @@
     height: rem(90px);
     text-align: center;
     border-radius: 10px;
+    
+    
+  
 }
 .drop__text{
     font-family: 'gagalin' ;
