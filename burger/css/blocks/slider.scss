@@ -15,7 +15,15 @@
        height: rem(465px);
        position: relative;
        
+       @include tablets{
+        height: 100%;
+         padding: 0 rem(40px);
+         padding-top: rem(50px);
     
+    }
+     @include phones {
+         padding: 0;
+     }
        
    }
   .slider__elemm{
@@ -24,10 +32,19 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+      
     }
   }
   .slider__burger{
       width: 100%;
+
+      @include tablets {
+          width: rem(400px);
+          padding-bottom: rem(40px);
+      }
+      @include phones {
+        padding: 0;
+    }
   }
 
   .slider__wrapper{
@@ -42,6 +59,9 @@
       width: rem(50px);
       justify-content: center;
       align-items: center;
+      @include tablets{
+          left: rem(-25px);
+      }
   }
   .slider__arrow--right{
     display: flex;
@@ -52,6 +72,9 @@
     bottom: 0;
     right: rem(-50px);
     width: rem(50px);
+    @include tablets{
+        right: rem(-25px);
+    }
   }
 
 
@@ -70,13 +93,19 @@
   .slider__title{
       color: #fff;
       @include tablets{
-        padding: 0 rem(200px);
+        padding: 0 rem(50px);
+        padding-bottom: rem(40px);
+    }
+    @include phones {
+        padding: 0 rem(20px);
+        padding-bottom: rem(0px);
     }
   }
 
   .main__elemm{
       min-width: 100%;
       position: relative;
+     
       
   }
 
@@ -93,6 +122,7 @@
     padding-bottom: 40px;
     font-family: 'ubuntu-light' ;
     font-size: 14px;
+    line-height: 1.7em;
     
     @include tablets{
         padding-top: rem(20px);
@@ -110,9 +140,16 @@
     font-family: 'gagalin' ;
     color: $orange;
     line-height: 0.8;
+    @include phones {
+        font-size: rem(60px);
+        line-height: 0.9;
+    }
   }
   .litle{
       font-size: 50px;
+      @include phones {
+        font-size: rem(40px);
+    }
   }
   
   .slider__wrapper{
@@ -120,7 +157,6 @@
   }
 
   .slider__scroll{
-      height: 100%;
       width: rem(40px);
       transform: rotate(90deg);
       top: 50%;
@@ -128,6 +164,8 @@
       &.right{
         transform: rotate(270deg);   
       }
+
+
   }
 
   .slider__pic{
@@ -136,10 +174,15 @@
       bottom: 0;
 
      @include tablets {
-         top:0;
+        top: rem(-100px);
+         bottom: auto;
+         left: auto;
+         right: rem(100px);
       }
 
-     
+      @include phones {
+        right: rem(50px);
+    }
   }
   .slider__picture{
       height: rem(105px);
@@ -150,21 +193,18 @@
   .pic__numb{
     font-family: 'gagalin' ;
     font-size: rem(20px);  
-    top: 50%;
-      left: 31%;
-      position: absolute;
-      @include tablets{
-          top: 11%;
-      }
+    top: rem(50px);
+    left: 50%;
+    transform: translate(-50%,0);
+    position: absolute;
+      
   }
 
   .pic__text{
     font-family: 'gagalin' ;
     font-size: rem(14px);
-      top:88%;
-      left: 31%;
-      position: absolute;
-      @include tablets{
-        top: 20%;
-    }
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    position: absolute;
   }
