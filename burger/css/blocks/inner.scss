@@ -16,6 +16,11 @@
     
 }
 
+.inner__logo{
+    @include tablets{
+        z-index: 100;
+    }
+}
 .burger{
     height: 100%;
 }

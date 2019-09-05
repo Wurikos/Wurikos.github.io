@@ -48,7 +48,6 @@
 .best__desc{
     @include phones{
         text-align: left;
-        padding: rem(20px);
         width: 100%;
     }
 }
@@ -60,6 +59,7 @@
     padding-bottom: rem(30px);
     @include tablets{
         padding-bottom: rem(10px);
+        font-size: rem(30px);
         
     }
     @include phones{

@@ -40,9 +40,10 @@
 
       @include tablets {
           width: rem(400px);
-          padding-bottom: rem(40px);
+          padding-bottom: rem(20px);
       }
       @include phones {
+        width: rem(300px);
         padding: 0;
     }
   }
@@ -95,9 +96,10 @@
       @include tablets{
         padding: 0 rem(50px);
         padding-bottom: rem(40px);
+        font-size: rem(50px);
     }
     @include phones {
-        padding: 0 rem(20px);
+        font-size: rem(40px)s;
         padding-bottom: rem(0px);
     }
   }
@@ -127,6 +129,9 @@
     @include tablets{
         padding-top: rem(20px);
     }
+    @include phones{
+        padding-bottom: rem(50px);
+    }
   }
   .slider__btn{
       display: block;
@@ -141,7 +146,7 @@
     color: $orange;
     line-height: 0.8;
     @include phones {
-        font-size: rem(60px);
+        font-size: rem(40px);
         line-height: 0.9;
     }
   }
@@ -182,6 +187,7 @@
 
       @include phones {
         right: rem(50px);
+        top: rem(-110px);
     }
   }
   .slider__picture{

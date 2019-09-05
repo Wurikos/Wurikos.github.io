@@ -35,6 +35,18 @@
 }
 .team__point{
     padding: rem(20px);
+    &.active{
+        .team__poin-content{
+            height: 100%;
+        }
+        
+        .team__poin-title{
+           color: #f9b43b;
+           &::before{
+               transform: rotate(180deg);
+           }
+        }
+    }
     @include tablets{
         display: flex;
         flex-direction: column;

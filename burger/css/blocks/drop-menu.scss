@@ -3,10 +3,11 @@
     position: absolute;
     top: 0;
     @include tablets{
-        top: rem(-100px);
+        top: rem(-80px);
         left: rem(100px);
     }
     @include phones {
+        top: rem(-100px);
         left: rem(50px);
     }
 }

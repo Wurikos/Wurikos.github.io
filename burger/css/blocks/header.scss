@@ -6,13 +6,22 @@
    
 
 }
-.header__butt{
+
+.header__humb{
+    position: fixed;
     @include tablets{
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     @include phones{
         display: flex;
         align-items: center;
+        justify-content: center;
     }
+}
+
+.header__butt{
+    display: flex;
+    align-items: center;
 }

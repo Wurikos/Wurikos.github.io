@@ -4,17 +4,35 @@ height: 100%;
 align-items: center;
 }
 
-
-nav{
-    @include tablets{
-       display: none;
-        
-    }
-
-    @include phones {
+.nav{
+    @include tablets {
         display: none;
     }
 }
+
+.nav__active{
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    background-color: rgba($black, 0.9);
+    transition: opacity 1s;
+    .nav__list{
+        flex-direction: column;
+        height: 80%;
+        text-align: center;
+        
+    }
+
+  
+}
+
 .nav__elemm{ 
     display: flex;
     align-items: center;
@@ -27,6 +45,13 @@ nav{
         border-radius: 50%;
         display: block;
         margin-left: 20px;
+        @include tablets {
+            flex-direction: column;
+            margin-top: rem(30px);
+            margin-left: 0;
+            width: 8px;
+            height: 8px;
+        }
     }
 
     &:last-child{
@@ -35,7 +60,10 @@ nav{
         }
     }
 
-
+    @include tablets {
+        flex-direction: column;
+        margin: rem(20px);
+    }
 }
 
 
@@ -45,4 +73,10 @@ nav{
     text-transform: uppercase;
     color: white;
 
+    @include tablets {
+        font-size: rem(30px);
+    }
+
 }
+
+

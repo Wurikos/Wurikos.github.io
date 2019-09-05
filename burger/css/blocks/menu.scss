@@ -19,12 +19,14 @@
 .accorderdeon-menu__elem{
     display: flex;
     &.active{
+        .accorderdeon-menu__title{
+            color:$yellow;
+        }
         .accorderdeon-menu__content{
             max-width: rem(500px);
-            @include tablets{
-                width: 0;
-                
-            }
+           transition: width .4s;
+        
+           
         }
     }
 }
@@ -50,11 +52,7 @@
     margin-top: rem(-40px);
     white-space: nowrap;
 
-    &:hover{
-        color: $yellow;
-        transition: 0.3s;
-    }
-
+  
     
 }
 .accorderdeon-menu__content{
@@ -62,6 +60,7 @@
     color: white;
     overflow: hidden;
     max-width: 0;
+    
 }
 
 .accorderdeon-menu__text{
@@ -69,5 +68,6 @@
     font-size: rem(14px);
     padding: rem(60px) rem(30px);
     min-width: 300px;
+   
 
 }
