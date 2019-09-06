@@ -7,13 +7,16 @@
     color: #fff;
     
   }
-  
+  .slider__container{
+      position: relative;
+  }
    .slider__list{
        display: flex;
        justify-content: center;
        flex: 0 0 auto;
        height: rem(465px);
        position: relative;
+       overflow: hidden;
        
        @include tablets{
         height: 100%;

@@ -7,6 +7,9 @@ $orange: #e45028;
 $yellow: #f9b43b;
 $black:  #2f3234;
 $red:    #e35028;
+$softorange: #F4A259;
+$tomatored: #F25C66;
+$mediumblu: #1E272D;
 
 
 @import "./blocks/section.scss";
@@ -30,7 +33,7 @@ $red:    #e35028;
 @import "./blocks/fixed-menu.scss";
 @import "./blocks/sprite.scss";
 @import "./blocks/animate.scss";
-
+@import "./blocks/popup.scss";
 
 
 

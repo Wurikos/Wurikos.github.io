@@ -1,35 +1,42 @@
-const left = document.querySelector("#left");
-const right = document.querySelector("#right");
-const items = document.querySelector("#items");
-const comuted = getComputedStyle(items);
-
-right.addEventListener("click", function(e){
-e.preventDefault();
-let currentRight = parseInt(comuted.right);
-
-if (!currentRight) {
-    currentRight = 0;
+slider();
+function slider() {
+ const sliderLeftButton = document.querySelector("#left");
+ const sliderRightButton = document.querySelector("#right");
+ const slider = document.querySelector("#items");
+ const slides = document.querySelectorAll(".slider__elemm");
+ const slide = document.querySelector(".slider__elemm");
+ let minRight = 0;
+ let step = slide.offsetWidth;
+ let maxRight = (slides.length - 1) * slide.offsetWidth;
+ let currentRight = 0;
+ slider.style.right = currentRight;
+ function leftMove() {
+   if (currentRight > minRight) {
+     currentRight -= step;
+     slider.style.right = currentRight + "px";
+   } else {
+     currentRight = maxRight;
+     slider.style.right = maxRight + "px";
+   }
+ }
+ function rightMove() {
+   if (currentRight < maxRight) {
+     currentRight += step;
+     slider.style.right = currentRight + "px";
+   } else {
+     currentRight = minRight;
+     slider.style.right = minRight + "px";
+   }
+ }
+ sliderLeftButton.addEventListener("click", function() {
+    event.preventDefault();
+    leftMove();
+ });
+ sliderRightButton.addEventListener("click", function() {
+    event.preventDefault();
+    rightMove();
+ });
 }
-
-if (!currentRight < 10000) {
-    items.style.right = currentRight + 1000 + "px";
-}
-
-});
-left.addEventListener("click", function(e) {
-    e.preventDefault();
-    let currentRight = parseInt(computed.right);
-  
-    if (!currentRight) {
-      currentRight = 0;
-    }
-  
-    if (currentRight > 10000) {
-      items.style.right = currentRight - 1000 + "px";
-    }
-  });
-
-  
 
 ///////////////////////////////////////////////////
 var hamburgerMenu = document.querySelector('#humbMenu');
@@ -89,3 +96,45 @@ $(".team__point").on("click", function(e){
       
   
   });
+
+
+  /////////////////////////////////////////////////
+  $(".reviews .btn").on("click", function(e){
+    e.preventDefault();
+    $(".popup").addClass("active");
+      
+});
+
+$(".popup__close").on("click", function(e){
+    e.preventDefault();
+    $(".popup").removeClass("active");
+      
+});
+ 
+ 
+
+
+/////////////////////////////////////////////////////////
+
+document.addEventListener("DOMContentLoaded", function(){
+
+
+    ymaps.ready(init);
+    function init(){ 
+        // Создание карты.    
+        var myMap = new ymaps.Map("map", {
+            
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [47.222078, 39.720349],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 12
+            
+        }); myMap.behaviors.disable('scrollZoom');
+     
+    }
+
+});
