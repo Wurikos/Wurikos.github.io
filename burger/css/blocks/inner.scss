@@ -41,11 +41,14 @@
 
     @include tablets{
         text-align: center;
-        padding: rem(20px) rem(80px);
+        padding: rem(20px) rem(40px);
         
         
     }
 
+    @include phones{
+        padding: 0px;
+    }
    
 }
 

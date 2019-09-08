@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ba39b2f7-8846-45d0-b9d1-f19880a9da88&lang=ru_RU" type="text/javascript">
     </script>
+    
     <title>Burger</title>
 </head>
 
@@ -15,8 +16,8 @@
 
 <body>
     <div class="wrapper">
-        <section class="section__scrol">
-            <section class="section inner">
+        <section class="section__scrol" id="fullpage">
+            <section class="section inner" data-anchor="slider__burger">
                 <div class="container vertical--centered">
                     <header class="header">
                         <div class="inner__logo">
@@ -24,17 +25,17 @@
                         </div>
                         <nav class="nav animated fadeIn" id="humbMenu">
                             <ul class="nav__list">
-                                <li class="nav__elemm"><a href="#" class="nav__link">О нас </a></li>
-                                <li class="nav__elemm"><a href="#" class="nav__link">бургеры</a></li>
-                                <li class="nav__elemm"><a href="#" class="nav__link">команда</a></li>
-                                <li class="nav__elemm"><a href="#" class="nav__link">меню</a></li>
-                                <li class="nav__elemm"><a href="#" class="nav__link">отзывы</a></li>
-                                <li class="nav__elemm"><a href="#" class="nav__link">как мы работаем</a></li>
-                                <li class="nav__elemm"><a href="#" class="nav__link">контакты</a></li>
+                                <li class="nav__elemm"><a href="#slider__burger" class="nav__link">О нас </a></li>
+                                <li class="nav__elemm"><a href="#slider__burgerslide" class="nav__link">бургеры</a></li>
+                                <li class="nav__elemm"><a href="#slider__team" class="nav__link">команда</a></li>
+                                <li class="nav__elemm"><a href="#slider__menu" class="nav__link">меню</a></li>
+                                <li class="nav__elemm"><a href="#slider__reviews" class="nav__link">отзывы</a></li>
+                                <li class="nav__elemm"><a href="#slider__burger" class="nav__link">как мы работаем</a></li>
+                                <li class="nav__elemm"><a href="#slider__contacts" class="nav__link">контакты</a></li>
                             </ul>
                         </nav>
                         <div class="header__butt">
-                            <a href="#" class="btn">Заказать</a>
+                            <a href="##slider__order" class="btn">Заказать</a>
 
                             <a href="#" id="hamburgerButton" class="hamburger hamburger--stand">
                                 <div class="hamburger-box">
@@ -62,7 +63,7 @@
                     </div>
                     </dive>
             </section>
-            <section class="section best">
+            <section class="section best" data-anchor="slider__best">
                 <div class="container flex--con">
                     <div class="title title--black">Мы лучшие</div>
                     <div class="best__content">
@@ -104,13 +105,13 @@
                     </div>
                 </div>
             </section>
-            <section class="section slider">
+            <section class="section slider" data-anchor="slider__burgerslide">
                 <div class="container slider__container">
                     <div class="slider__wrapper">
                         <a href="#" class="slider__arrow" id="left"> <svg class="slider__scroll">
                                 <use xlink:href="./sprite.svg#arrow-scroll"></use>
                             </svg></a>
-
+                        <div class="slider__list-wrapper">
                         <ul class="slider__list" id="items" >
                             <li class="slider__elemm main__elemm"  >
 
@@ -489,6 +490,7 @@
                                         </div>
                              </li>
                         </ul>
+                    </div>
                         <a href="#" class="slider__arrow--right" id="right"> <svg class="slider__scroll right">
                                 <use xlink:href="./sprite.svg#arrow-scroll"></use>
                             </svg></a>
@@ -498,7 +500,7 @@
 
                 </div>
             </section>
-            <section class="section reviews">
+            <section class="section reviews" data-anchor="slider__reviews">
                 <div class="container nowidth--con">
                     <ul class="reviews__list">
                         <li class="reviews__elemm">
@@ -617,7 +619,7 @@
                         </div>
                     </div>
             </section>
-            <section class="section team">
+            <section class="section team" data-anchor="slider__team">
                 <div class="container">
                     <div class="team__block">
                         <div class="team__content">
@@ -686,7 +688,7 @@
                     
                 </div>
             </section>
-            <section class="section menu">
+            <section class="section menu" data-anchor="slider__menu">
                 <h2 class="title title--white">Меню</h2>
                 <div class="accorderdeon-menu">
                     <ul class="accorderdeon-menu__list">
@@ -753,20 +755,22 @@
                     </ul>
                 </div>
             </section>
-            <section class="section order">
+            <section class="section order" data-anchor="slider__order">
                 <div class="container">
                     <div class="title title--center">Закажите доставку</div>
                     <div class="form">
-                        <form action="" class="form__elemm">
+                        <form action="" class="form__elemm" id="myForm">
                             <div class="form__column">
                                 <div class="form__row">
                                     <label class="form__block">
                                         <div class="form_block-title">Имя</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="name" required>
+                                        <div class="div"></div>
                                     </label>
                                     <label class="form__block">
                                         <div class="form_block-title">Телефон</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" placeholder="8-800-555-35-35" name="phone" required>
+                                        <div class="div"></div>
                                     </label>
                                 </div>
 
@@ -796,10 +800,11 @@
                                 </div>
 
                             </div>
-                            <div class="form__column">
+                            <div class="form__column form__rowblock ">
                                 <label class="form__block">
                                     <div class="form_block-title">Комментарий</div>
-                                    <textarea class="form__input form__input--textarea"></textarea>
+                                    <textarea class="form__input form__input--textarea" name="comment" required></textarea>
+                                    <div class="div"></div>
                                 </label>
                                 <div class="radio__group">
                                     <label class="radio">
@@ -823,11 +828,11 @@
                                         <div class="checkbox__btn">
                                             <img src="./img/form/check.svg" alt="check">
                                         </div>
-                                        <div class="checkbox__text">Оплата по карте</div>
+                                        <div class="checkbox__text">Не перезванивать</div>
                                     </div>
                                 </label>
                                 <div class="btn__group">
-                                    <button type="submit" class="btn">Заказать</button>
+                                    <button type="submit" class="btn" id="order">Заказать</button>
                                     <button type="reset" class="btn btn--black">Очистить</button>
                                 </div>
                             </div>
@@ -835,9 +840,8 @@
                     </div>
                 </div>
             </section>
-            <section class="section contacts">
-                <div class="container  nowidth--con">
-                        
+            <section class="section contacts" data-anchor="slider__contacts">
+                <div class="container  nowidth--con">       
                     <div class="contacts__content">
                             <div  class="contacts__map" id="map"></div>
                         <footer>
@@ -872,21 +876,21 @@
                 </div>
             </section>
         </section>
-        <ul class="fixed-menu">
-            <li class="fixed-menu__item fixed-menu__item--active"></li>
-            <li class="fixed-menu__item"></li>
-            <li class="fixed-menu__item"></li>
-            <li class="fixed-menu__item"></li>
-            <li class="fixed-menu__item"></li>
-            <li class="fixed-menu__item"></li>
-            <li class="fixed-menu__item"></li>
-            <li class="fixed-menu__item"></li>
-            <li class="fixed-menu__item"></li>
+        <ul class="fixed-menu" id="myMenu">
+            <li class="fixed-menu__item fixed-menu__item--active" data-menuanchor="#slider__burger"> <a href="#"></a> </li>
+            <li class="fixed-menu__item" data-menuanchor="#slider__best"><a href="#slider__best"></a> </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__burgerslide"><a href="#slider__burgerslide"></a> </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__reviews"><a href="#slider__reviews"></a> </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__team"><a href="#slider__team"></a> </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__menu"><a href="#slider__menu"></a> </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__order"><a href="#slider__order"></a> </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__contacts"><a href="#slider__contacts"></a> </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__contacts"> <a href="#slider__contacts"></a></li>
 
         </ul>
     </div>
-    
     <script src="./scripts/jquery-3.4.js"></script>
+    <script src="./scripts/fullpage.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
 

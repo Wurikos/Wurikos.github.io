@@ -5,11 +5,13 @@ function slider() {
  const slider = document.querySelector("#items");
  const slides = document.querySelectorAll(".slider__elemm");
  const slide = document.querySelector(".slider__elemm");
+ 
  let minRight = 0;
  let step = slide.offsetWidth;
  let maxRight = (slides.length - 1) * slide.offsetWidth;
  let currentRight = 0;
  slider.style.right = currentRight;
+ 
  function leftMove() {
    if (currentRight > minRight) {
      currentRight -= step;
@@ -19,6 +21,7 @@ function slider() {
      slider.style.right = maxRight + "px";
    }
  }
+ 
  function rightMove() {
    if (currentRight < maxRight) {
      currentRight += step;
@@ -77,24 +80,23 @@ hamburgerMenu.addEventListener('click', function (event) {
 ///////////////////////////////////////
 $(".accorderdeon-menu__elem").on("click", function(e){
     e.preventDefault();
-    //$(".accorderdeon-menu__elem").removeClass("active");
-    //$(this).addClass("active");
-      $(this).toggleClass("active");
-      
-  
+    if ( $(this).hasClass("active")){
+    $(".accorderdeon-menu__elem").removeClass("active");
+    } else{
+    $(".accorderdeon-menu__elem").removeClass("active");
+    $(this).addClass("active");}
+    
   });
 
 //////////////////////////////////////////////////
 
 $(".team__point").on("click", function(e){
     e.preventDefault();
-     // $(".team__point").removeClass("active");
-      //$(this).addClass("active");
-      $(this).toggleClass("active");
-
-      
-      
-  
+    if ( $(this).hasClass("active")){
+      $(".team__point").removeClass("active");
+      } else{
+      $(".team__point").removeClass("active");
+      $(this).addClass("active");} 
   });
 
 
@@ -102,16 +104,90 @@ $(".team__point").on("click", function(e){
   $(".reviews .btn").on("click", function(e){
     e.preventDefault();
     $(".popup").addClass("active");
+    //$('html, body').css({
+    //  overflow: 'hidden',
+     // height: '100%'
+  //});
       
 });
 
 $(".popup__close").on("click", function(e){
     e.preventDefault();
     $(".popup").removeClass("active");
-      
+   // $('html, body').css({
+    //  overflow: 'auto',
+    //  height: 'auto'
+  //});
 });
  
- 
+ //////////////////////////////////////////////////////
+
+ const myForm = document.querySelector("#myForm");
+ const order = document.querySelector("#order");
+ const formRow = document.querySelector(".form__rowblock ");
+ order.addEventListener("click", function(event) {
+  event.preventDefault();
+  if (validateForm(myForm)) {
+    let data = new FormData();
+    data.append("name", myForm.elements.name.value);
+    data.append("phone", myForm.elements.phone.value);
+    data.append("comment", myForm.elements.comment.value);
+    data.append("to", "my@gmail.com");
+    const xhr = new XMLHttpRequest();
+    xhr.responseType = "json";
+    xhr.open("POST", "https://webdev-api.loftschool.com/sendmail");
+    xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+    xhr.send(data);
+    xhr.addEventListener("load", () => {
+      if (xhr.response.status) {
+        const element = document.createElement("div");
+        formRow.appendChild(element);
+        element.classList.add("message__modal");
+        const element2 = document.createElement("div");
+        element.appendChild(element2);
+        element2.classList.add("message__send");
+        const element3 = document.createElement("div");
+        element2.appendChild(element3);
+        element3.classList.add("message__text");
+        element3.textContent = "Сообщение отправлено";
+        const element4 = document.createElement("button");
+        element2.appendChild(element4);
+        element4.classList.add("btn");
+        element4.textContent = "Закрыть";
+        element4.addEventListener("click", function() {
+          formRow.removeChild(element);
+        });
+      }
+      order.disabled = false;
+    });
+  }
+ });
+ function validateForm(form) {
+  let valid = true;
+  if (!validateField(form.elements.name)) {
+    valid = false;
+  }
+  if (!validateField(form.elements.phone)) {
+    valid = false;
+  }
+  if (!validateField(form.elements.comment)) {
+    valid = false;
+  }
+  return valid;
+ }
+ function validateField(field) {
+  if (!field.checkValidity()) {
+    field.nextElementSibling.textContent = field.validationMessage;
+    return false;
+  } else {
+    field.nextElementSibling.textContent = "";
+    return true;
+  }
+ }
+
+ $('#fullpage').fullpage({
+   menu:'myMenu'
+ });
 
 
 /////////////////////////////////////////////////////////
@@ -138,3 +214,8 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
 });
+
+///////////////////////////////////////////////////////////////
+
+
+

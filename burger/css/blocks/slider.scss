@@ -10,17 +10,19 @@
   .slider__container{
       position: relative;
   }
+
+  .slider__list-wrapper{
+      overflow: hidden;
+  }
    .slider__list{
        display: flex;
-       justify-content: center;
        flex: 0 0 auto;
        height: rem(465px);
        position: relative;
-       overflow: hidden;
-       
+       transition: 0.3s;
        @include tablets{
         height: 100%;
-         padding: 0 rem(40px);
+         
          padding-top: rem(50px);
     
     }
@@ -53,8 +55,10 @@
 
   .slider__wrapper{
       position: relative;
+      margin: 0 rem(40px);
   }
   .slider__arrow{
+      z-index: 100;
       display: flex;
       position: absolute;
       top: 0;
@@ -68,6 +72,7 @@
       }
   }
   .slider__arrow--right{
+    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,8 +115,13 @@
   .main__elemm{
       min-width: 100%;
       position: relative;
+     @include tablets {
+        padding-top: rem(80px);
+     }
      
-      
+      @include phones {
+        padding-top: rem(80px);
+      }
   }
 
   .slider__price{
@@ -165,6 +175,7 @@
   }
 
   .slider__scroll{
+      height: rem(30px);
       width: rem(40px);
       transform: rotate(90deg);
       top: 50%;
@@ -182,21 +193,27 @@
       bottom: 0;
 
      @include tablets {
-        top: rem(-100px);
+        top: 0;
          bottom: auto;
          left: auto;
          right: rem(100px);
       }
 
       @include phones {
-        right: rem(50px);
-        top: rem(-110px);
+        right: rem(0px);
+        bottom:  auto;
     }
   }
   .slider__picture{
       height: rem(105px);
       width: rem(82px);
       position: relative;
+      @include tablets{
+        top: -5px;
+      }
+      @include phones{
+        top: -10px;
+      }
   }
 
   .pic__numb{
@@ -206,6 +223,10 @@
     left: 50%;
     transform: translate(-50%,0);
     position: absolute;
+     
+    @include phones {
+        top: rem(40px);
+    }
       
   }
 
@@ -216,4 +237,8 @@
     left: 50%;
     transform: translate(-50%,0);
     position: absolute;
+
+    @include phones {
+        bottom: 3px;
+    }
   }

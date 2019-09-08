@@ -9,7 +9,11 @@
     font-size: rem(13px);
     text-transform: uppercase;
     border-radius: rem(5px);
-   
+    transition: all .1s linear;
+
+   &:active{
+    transform: translateY(3px);
+   }
 
     &:hover{
         background-color:#882d14;
@@ -38,4 +42,6 @@
     margin-right: rem(20px);
     
 }
+
+
 

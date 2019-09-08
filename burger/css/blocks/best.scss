@@ -40,9 +40,14 @@
 .best__icon{
     &-hand{
         height: 100px;
+        width: 150px;
     }
-    &-meat{ height: 100px; ;}
-    &-natural{ height: 100px;}
+    &-meat{
+         height: 100px;
+         width: 150px;}
+    &-natural
+    { height: 100px;
+    width: 150px;}
 }
 
 .best__desc{
