@@ -3,15 +3,17 @@
     top: rem(95px);
     right: rem(53px);
 
+    & .active{
+        border-color: white;
+    
+    }
+
     @include tablets{
         display: none;
         
+        
     }
 }
-
-
-
-
 
 .fixed-menu__item{
     height: rem(16px);
@@ -21,9 +23,7 @@
     margin-bottom: 3px;
     position: relative;
 
-    &--active{
-        border-color: white;
-    }
+   
     &:hover{
         border-color: white;
     }
@@ -39,15 +39,21 @@
        top:50%;
        left: 50%;
        transform: translate(-50%,-50%);
-       
-      
-
 
    }
 
+   &::before:hover{
+    background: $orange;
+   }
+   
    
     &:last-child{
         margin-bottom: 0px;
     }
     
+}
+
+.fixed-menu__link{
+    height: 15px;
+    width: 15px;
 }

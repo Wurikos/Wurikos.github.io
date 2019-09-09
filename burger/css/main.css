@@ -1366,6 +1366,7 @@ span.phone {
   position: relative; }
 
 .team__block {
+  height: 100%;
   position: absolute;
   left: 50%;
   background-color: #2f3234;
@@ -1909,6 +1910,8 @@ footer {
   position: fixed;
   top: 5.9375rem;
   right: 3.3125rem; }
+  .fixed-menu .active {
+    border-color: white; }
   @media screen and (max-width: 768px) {
     .fixed-menu {
       display: none; } }
@@ -1920,8 +1923,6 @@ footer {
   border: 1px solid transparent;
   margin-bottom: 3px;
   position: relative; }
-  .fixed-menu__item--active {
-    border-color: white; }
   .fixed-menu__item:hover {
     border-color: white; }
   .fixed-menu__item::before {
@@ -1936,8 +1937,14 @@ footer {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+  .fixed-menu__item::before:hover {
+    background: #e45028; }
   .fixed-menu__item:last-child {
     margin-bottom: 0px; }
+
+.fixed-menu__link {
+  height: 15px;
+  width: 15px; }
 
 .sprite {
   display: block;
@@ -9835,3 +9842,8 @@ footer {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   background-color: #F25C66; }
+
+.workspace {
+  height: 100vh;
+  background: url(/img/workspace/BG.jpg) no-repeat center center;
+  background-size: cover; }

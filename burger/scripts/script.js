@@ -1,3 +1,4 @@
+
 slider();
 function slider() {
  const sliderLeftButton = document.querySelector("#left");
@@ -69,7 +70,6 @@ hamburgerButton.addEventListener('click', function (event) {
 });
 
 hamburgerMenu.addEventListener('click', function (event) {
-    event.preventDefault();
     if (e.target.classList.contains('nav__link')){
         closeHamburgerMenu();
     }
@@ -124,7 +124,7 @@ $(".popup__close").on("click", function(e){
 
  const myForm = document.querySelector("#myForm");
  const order = document.querySelector("#order");
- const formRow = document.querySelector(".form__rowblock ");
+ const body = document.querySelector("body");
  order.addEventListener("click", function(event) {
   event.preventDefault();
   if (validateForm(myForm)) {
@@ -141,7 +141,7 @@ $(".popup__close").on("click", function(e){
     xhr.addEventListener("load", () => {
       if (xhr.response.status) {
         const element = document.createElement("div");
-        formRow.appendChild(element);
+        body.appendChild(element);
         element.classList.add("message__modal");
         const element2 = document.createElement("div");
         element.appendChild(element2);
@@ -155,7 +155,7 @@ $(".popup__close").on("click", function(e){
         element4.classList.add("btn");
         element4.textContent = "Закрыть";
         element4.addEventListener("click", function() {
-          formRow.removeChild(element);
+          body.removeChild(element);
         });
       }
       order.disabled = false;
@@ -183,11 +183,7 @@ $(".popup__close").on("click", function(e){
     field.nextElementSibling.textContent = "";
     return true;
   }
- }
-
- $('#fullpage').fullpage({
-   menu:'myMenu'
- });
+ };
 
 
 /////////////////////////////////////////////////////////
@@ -210,12 +206,14 @@ document.addEventListener("DOMContentLoaded", function(){
             zoom: 12
             
         }); myMap.behaviors.disable('scrollZoom');
+        $('#fullpage').fullpage({
+          menu:'#myMenu'
+        });
      
     }
 
 });
 
 ///////////////////////////////////////////////////////////////
-
 
 
