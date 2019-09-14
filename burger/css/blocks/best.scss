@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 33%;
+    width: 32%;
     padding-right: rem(26px);
     
     @include phones{
@@ -54,14 +54,15 @@
     @include phones{
         text-align: left;
         width: 100%;
+        padding-left: rem(20px);
     }
 }
 .best__subtitle{
     font-family: 'lifehack' ;
-    font-size: rem(40px);
+    font-size: rem(25px);
     color: black;
     padding-top: 20px;
-    padding-bottom: rem(30px);
+    padding-bottom: rem(15px);
     @include tablets{
         padding-bottom: rem(10px);
         font-size: rem(30px);
@@ -73,7 +74,9 @@
 }
 .best__text{
     font-family: 'ubuntu-light';
-    color: black;
+    color: #2f3234;
+    line-height: rem(25px);
+    font-size: rem(14px);
     @include phones{
         font-size: rem(14px);
     }

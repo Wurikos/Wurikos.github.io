@@ -25,17 +25,17 @@
                         </div>
                         <nav class="nav animated fadeIn" id="humbMenu">
                             <ul class="nav__list">
-                                <li class="nav__elemm"><a href="#slider__burger" class="nav__link">О нас </a></li>
+                                <li class="nav__elemm"><a href="#slider__best" class="nav__link">О нас </a></li>
                                 <li class="nav__elemm"><a href="#slider__burgerslide" class="nav__link">бургеры</a></li>
                                 <li class="nav__elemm"><a href="#slider__team" class="nav__link">команда</a></li>
                                 <li class="nav__elemm"><a href="#slider__menu" class="nav__link">меню</a></li>
                                 <li class="nav__elemm"><a href="#slider__reviews" class="nav__link">отзывы</a></li>
-                                <li class="nav__elemm"><a href="#slider__burger" class="nav__link">как мы работаем</a></li>
+                                <li class="nav__elemm"><a href="#slider__workspace" class="nav__link">как мы работаем</a></li>
                                 <li class="nav__elemm"><a href="#slider__contacts" class="nav__link">контакты</a></li>
                             </ul>
                         </nav>
                         <div class="header__butt">
-                            <a href="##slider__order" class="btn">Заказать</a>
+                            <a href="#slider__order" class="btn">Заказать</a>
 
                             <a href="#" id="hamburgerButton" class="hamburger hamburger--stand">
                                 <div class="hamburger-box">
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div class="scrol__down">
-                        <a href="#" class="srcol__link"><img src="./img/inner/scroll-down.png" alt="scrol-down"
+                        <a href="#slider__best" class="srcol__link"><img src="./img/inner/scroll-down.png" alt="scrol-down"
                                 class="scrol__img"></a>
                     </div>
                     </dive>
@@ -284,7 +284,7 @@
                                         <div class="pic__text">Ккал</div>
                                     </div>
                                     <div class="slider__col slider__col--center">
-                                        <img src="./img/slider/main-burger.png" alt="" class="slider__burger">
+                                        <img src="./img/slider/burgers-slider/Chiken burger.png" alt="" class="slider__burger burger__width" >
     
     
                                     </div>
@@ -378,7 +378,7 @@
                                         <div class="pic__text">Ккал</div>
                                     </div>
                                     <div class="slider__col slider__col--center">
-                                        <img src="./img/slider/main-burger.png" alt="" class="slider__burger">
+                                        <img src="./img/slider/burgers-slider/3.png" alt="" class="slider__burger">
     
     
                                     </div>
@@ -472,7 +472,7 @@
                                             <div class="pic__text">Ккал</div>
                                         </div>
                                         <div class="slider__col slider__col--center">
-                                            <img src="./img/slider/main-burger.png" alt="" class="slider__burger">
+                                            <img src="./img/slider/burgers-slider/4.png" alt="" class="slider__burger burger__width">
         
         
                                         </div>
@@ -621,10 +621,14 @@
             </section>
             <section class="section workspace" data-anchor="slider__workspace">
                 <div class="container">
-                    <div class="worspace__content">
+                    <div class="workspace__content">
                         <div class="title title--black">Как мы работаем</div>
                         <div class="workspace__video">
-
+                            <div class="player">
+                                <div class="player__wrapper">
+                                    <video src="./video/how we work.mp4" class="player__video"
+                                    poster="./img/workspace/bg-how.png"></video>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -888,7 +892,7 @@
         </section>
         <ul class="fixed-menu" id="myMenu">
             <li class="fixed-menu__item" data-menuanchor="slider__burger">
-                 <a href="#" class="fixed-menu__link" ></a> 
+                 <a href="#slider__burger" class="fixed-menu__link" ></a> 
             </li>
             <li class="fixed-menu__item" data-menuanchor="slider__best">
                 <a href="#slider__best" class="fixed-menu__link"></a> 
@@ -899,9 +903,12 @@
             <li class="fixed-menu__item" data-menuanchor="slider__reviews">
                 <a href="#slider__reviews" class="fixed-menu__link"></a> 
             </li>
-            <li class="fixed-menu__item" data-menuanchor="slider__team">
-                <a href="#slider__team" class="fixed-menu__link"></a> 
+            <li class="fixed-menu__item" data-menuanchor="slider__workspace">
+                <a href="#slider__workspace" class="fixed-menu__link"></a> 
             </li>
+            <li class="fixed-menu__item" data-menuanchor="slider__team">
+                <a href="#slider__team" class="fixed-menu__link"></a>
+           </li>
             <li class="fixed-menu__item" data-menuanchor="slider__menu">
                 <a href="#slider__menu" class="fixed-menu__link"></a> 
             </li>
@@ -911,14 +918,13 @@
             <li class="fixed-menu__item" data-menuanchor="slider__contacts">
                 <a href="#slider__contacts" class="fixed-menu__link"></a> 
             </li>
-            <li class="fixed-menu__item" data-menuanchor="slider__contacts">
-                 <a href="#slider__contacts" class="fixed-menu__link"></a>
-            </li>
+          
 
         </ul>
     </div>
     <script src="./scripts/jquery-3.4.js"></script>
     <script src="./scripts/fullpage.js"></script>
+    <script src="./scripts/player.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
 

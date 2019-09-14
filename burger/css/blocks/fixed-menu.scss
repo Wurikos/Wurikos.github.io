@@ -5,6 +5,8 @@
 
     & .active{
         border-color: white;
+        box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.9);
+        transition: 0.2s;
     
     }
 
@@ -26,6 +28,8 @@
    
     &:hover{
         border-color: white;
+        box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.9);
+        
     }
    
    
@@ -54,6 +58,7 @@
 }
 
 .fixed-menu__link{
-    height: 15px;
-    width: 15px;
+    height: 18px;
+    width: 20px;
+    
 }

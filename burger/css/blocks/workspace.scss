@@ -1,5 +1,17 @@
 .workspace{
     height: 100vh;
-    background: url(../img/workspace/BG.jpg)no-repeat center center;
+    background: url(../img/workspace/BG.png)no-repeat center center;
     background-size: cover;
+}
+
+.workspace__content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    & .title {
+        padding: 0;
+        @include phones{
+            text-align: center;
+        }
+    }
 }

@@ -53,6 +53,17 @@
     }
   }
 
+  .burger__width{
+    width: 90%;
+    @include tablets {
+      width: rem(400px);
+      
+  }
+  @include phones {
+    width: rem(300px);
+}
+
+  }
   .slider__wrapper{
       position: relative;
       margin: 0 rem(40px);
