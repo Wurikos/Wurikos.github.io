@@ -67,13 +67,18 @@ hamburgerButton.addEventListener('click', function (event) {
         }, 400);
     }else {openHamburgerMenu();
     }
-});
+  });
 
-hamburgerMenu.addEventListener('click', function (event) {
-    if (e.target.classList.contains('nav__link')){
-        closeHamburgerMenu();
+  hamburgerMenu.addEventListener("click", function(e) {
+    e.preventDefault;
+    if (e.target.classList.contains("nav__link")) {
+      closeHamburgerMenu();
     }
-});
+   });
+
+
+
+
 
 
 
@@ -104,20 +109,20 @@ $(".team__point").on("click", function(e){
   $(".reviews .btn").on("click", function(e){
     e.preventDefault();
     $(".popup").addClass("active");
-    //$('html, body').css({
-    //  overflow: 'hidden',
-     // height: '100%'
-  //});
+    $('html, body').css({
+     overflow: 'hidden',
+     height: '100%'
+  });
       
 });
 
 $(".popup__close").on("click", function(e){
     e.preventDefault();
     $(".popup").removeClass("active");
-   // $('html, body').css({
-    //  overflow: 'auto',
-    //  height: 'auto'
-  //});
+    $('html, body').css({
+     overflow: 'auto',
+     height: 'auto'
+  });
 });
  
  //////////////////////////////////////////////////////
